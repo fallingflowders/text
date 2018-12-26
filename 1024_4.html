@@ -1,0 +1,59 @@
+<meta charset='utf-8'>
+<script>
+<!--
+	var id="";
+	function aaa()//对应开始按钮单击操作
+	{
+		
+		function rand()
+		{
+			var tab="<table border='1' width='500' height='500'>";
+			var ran = Math.floor(Math.random()*10);
+			for (var a=1;a<=10;a++ )//10行表格
+			{
+				tab+="<tr>";
+				for (var b=1;b<=10;b++ )
+				{
+					var num = ((a-1)*10+b);
+					if (ran%2==0)
+					{
+						if ((a+b)%2==0)
+						{
+							tab+="<td bgcolor='yellow'>";
+						}
+						else
+						{
+							tab+="<td bgcolor='green'>";
+						}
+					} 
+					if (ran%2==1)
+					{
+						if ((a+b)%2==0)
+						{
+							tab+="<td bgcolor='green'>";
+						}
+						else
+						{
+							tab+="<td bgcolor='yellow'>";
+						}
+					}
+					tab+=num;
+					tab+="</td>";
+				}	
+				tab+="</tr>";
+			}
+			tab+="</table>";
+			document.getElementById('aa').innerHTML=tab;
+		}
+		id=window.setInterval(rand,10);//得到ID号	
+	}
+	function bbb()//对应停止按钮单击操作
+	{
+		window.clearInterval(id);
+	}
+-->
+</script>
+<input type='button' value='start' onclick='aaa();'>
+<input type='button' value='stop' onclick='bbb();'>
+<hr color='blue' size='5'>
+<div id='aa'></div>
