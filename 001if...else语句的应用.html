@@ -1,0 +1,67 @@
+<meta charset='utf-8'>
+<style>
+<!--
+	body
+	{
+		text-align:center;
+		font-size:30px;
+		color:red;
+		background-color:black;
+	}
+-->
+</style>
+<script type='Text/JavaScript'>
+<!--
+	function a1()
+	{
+		var str="";
+		var aa = document.getElementById('aa').value;
+		var bb = document.getElementById('bb').value;
+		var cc = document.getElementById('cc').value;
+		if (aa%2==0 && aa!=0)
+		{
+			str+="第一个数是偶数:"+aa+"<br>";
+		}
+		
+		if (bb%2==0 &&bb!=0)
+		{
+			str+="第二个数是偶数:"+bb+"<br>";
+		}
+		if (cc%2==0  && cc!=0)
+		{
+			str+="第三个数是偶数:"+cc+"<br>";
+		}
+		document.getElementById('nn').innerHTML=str;
+		
+	}
+	function a2()
+		{
+			var str="";
+			var aa = document.getElementById('aa').value;
+			var bb = document.getElementById('bb').value;
+			var cc = document.getElementById('cc').value;
+			if (aa%2==1 && aa!=0)
+			{
+				str+="第一个数是奇数:"+aa+"<br>";
+			}
+		
+			if (bb%2==1 &&bb!=0)
+			{
+				str+="第二个数是奇数:"+bb+"<br>";
+			}
+			if (cc%2==1  && cc!=0)
+			{
+				str+="第三个数是奇数:"+cc+"<br>";
+			}
+			document.getElementById('nn').innerHTML=str;
+		}
+-->
+</script>
+请输入第一个数: <input type='text'  id='aa'><br>
+请输入第二个数: <input type='text'  id='bb'><br>
+请输入第三个数: <input type='text'  id='cc'><br>
+<input type='button' value='找偶数' onclick='a1();'>
+<input type='button' value='找奇数' onclick='a2();'>
+<hr color='red' size='5'>
+<div class='nn' id='nn'>
+  
