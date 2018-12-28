@@ -1,0 +1,47 @@
+<meta charset='utf-8'>
+<script type='Text/JavaScript'>
+<!--
+	function qq()
+	{
+		var a =0;
+		var str ="<table width='600' height='500' border='1' bordercolor='red'>";
+		while (a<10)
+		{
+			a++;
+			var b=0;
+		   str+="<tr>";
+			while (b<10)
+			{
+				b++;
+				str+="<td>while</td>";
+			}
+		    str+="</tr>";
+		}
+		str+="</table>"
+		document.getElementById("aa").innerHTML =str;
+	}
+	function ww()
+	{
+		var a =0;
+		var str ="<table width='600' height='500' border='1' bordercolor='blue'>";
+		do
+		{
+			a++;
+			var b=0;
+		   str+="<tr>";
+			do
+			{
+				b++;
+				str+="<td>do...while</td>";
+			}while (b<10)
+		    str+="</tr>";
+		}while (a<10)
+		str+="</table>"
+		document.getElementById("aa").innerHTML =str;
+	}
+-->
+</script>
+<input type='button' value='while' onclick='qq();'>&nbsp;&nbsp;&nbsp;
+<input type='button' value='do...while' onclick='ww();'>
+<hr color='red' size='5'>
+<div id='aa'></div>
