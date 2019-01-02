@@ -1,0 +1,37 @@
+<meta charset='utf-8'>
+<script>
+	<!--
+		function aaa()
+		{
+			var qq=new Array('今日话题','教育园地','视觉焦点','政治时事','财经资讯','金融动态','车友天地','股票期权','科技世界','投资指南','房产天地','家居建材','旅游见闻','会展交流','美食烹饪','经贸来往','军事知识','交通信息','名医访谈','广播互联','运动健身');
+			var str="";
+			var c=0;
+			var bgcolor=''
+			var shu=Math.floor(Math.random()*10);
+			if (shu%2==0)
+			{
+				bgcolor="aqua";
+			}
+			else
+			{
+				bgcolor="red";
+			}
+			str+="<table border='1' width='600' height='500' bordercolor='black' bgcolor="+bgcolor+">";
+			for (a=1;a<=3 ;a++ )
+			{
+				str+="<tr>";
+				for (b=0;b<7;b++ )
+				{
+					str+="<td>"+qq[c]+"</td>";
+					c++;
+				}
+				str+="</tr>";
+			}
+			str+="</table>";
+			document.getElementById("div").innerHTML=shu+"<br>"+str;
+		}
+	-->
+</script>
+<input type='button' value='随机数' onclick='aaa();'>
+<hr size='5' color='red'>
+<div id='div'></div>
